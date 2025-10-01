@@ -44,19 +44,6 @@
   margin-bottom: 0.5rem;
 }
 
-.song-artist {
-  color: #718096;
-  font-size: 1rem;
-  margin-bottom: 0.5rem;
-}
-
-.song-meta {
-  display: flex;
-  gap: 1rem;
-  font-size: 0.9rem;
-  color: #a0aec0;
-}
-
 /* Song Detail */
 .song-detail {
   background: rgba(255, 255, 255, 0.95);
@@ -70,11 +57,10 @@
   background: #667eea;
   color: white;
   border: none;
-  padding: 0.75rem 1.5rem;
+  padding: 0.75rem 1rem;
   border-radius: 50px;
   font-size: 1rem;
   cursor: pointer;
-  margin-bottom: 1.5rem;
   transition: all 0.3s ease;
   display: inline-flex;
   align-items: center;
@@ -96,20 +82,6 @@
   font-weight: 700;
   color: #2d3748;
   margin-bottom: 0.5rem;
-}
-
-.detail-artist {
-  font-size: 1.2rem;
-  color: #667eea;
-  margin-bottom: 0.5rem;
-}
-
-.detail-meta {
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-  color: #718096;
-  font-size: 0.9rem;
 }
 
 .lyrics {
@@ -142,34 +114,39 @@
   .container {
     padding: 0 15px;
   }
-  
+
+  .container_header {
+    display: flex;
+    gap: 20vw;
+  }
+
   .header h1 {
     font-size: 1.5rem;
   }
-  
+
   .song-item {
     padding: 1.25rem;
     margin-bottom: 0.75rem;
   }
-  
+
   .song-title {
     font-size: 1.2rem;
   }
-  
+
   .song-detail {
     padding: 1.5rem;
     margin: 1rem 0;
   }
-  
+
   .detail-title {
     font-size: 1.5rem;
   }
-  
+
   .lyrics {
     font-size: 1rem;
     text-align: left;
   }
-  
+
   .detail-meta {
     flex-direction: column;
     gap: 0.5rem;
@@ -183,12 +160,14 @@
     opacity: 0;
     transform: translateY(20px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
   }
 }
 
-.song-item, .song-detail {
+.song-item,
+.song-detail {
   animation: fadeIn 0.5s ease;
 }
