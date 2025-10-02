@@ -4,6 +4,7 @@ import { useLocation, useNavigate } from 'react-router-dom';
 const Header: React.FC = () => {
   const navigate = useNavigate();
   const location = useLocation();
+  const text = "<";
   return (
     <header className="header">
       <div className="container container_header">
@@ -11,7 +12,7 @@ const Header: React.FC = () => {
           className="back-button"
           onClick={() => navigate(-1)}
         >
-          ←
+          {text}
         </button>}
         <h1>Квартирник</h1>
       </div>
